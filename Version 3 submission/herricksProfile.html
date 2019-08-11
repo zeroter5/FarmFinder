@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Farm Finder - Farm Profile</title>
+   <link href="resetProject.css" rel="stylesheet" />
+   <link href="project.css" rel="stylesheet" />
+</head>
+
+<body>
+<header>
+  <h1>FARM FINDER</h1>
+  <nav>
+    <ul>
+    <center><a href="homePage.html">Home</a>
+    <a href="searchForm.html">Search</a>
+    <a href="nearbyFarms.html">Farms Near Me</a>
+    <a href="farmSignUp.html">Sign Up</a>
+    <a href="cart.html">Cart</a></center>
+    </ul> 
+ </nav>
+</header>
+
+<main>
+    <h2>Farm Profile:</h2>
+    <hr/>
+     <section>
+         <table>
+            <td>
+                <img src="another_farm.jpg" title="Herrick's" height="240" width="240">
+             </td>
+             <td>
+                 <h3>Herrick's</h3><br/>
+                 <p>No rhyme, no reason. You say potato, we say tomato.</p><br/>
+                 <h3>Contact Information</h3><br/>
+                 <p>Address: 123 Dirt Road</p>
+                 <p>Phone #: 444-555-6666</p>
+                 <p>Email: bodadobodado@hotmail.net</p>
+                 
+             </td>
+         </table>
+     </section>
+    
+    <hr/>
+    <h2>Products Available:</h2>
+    <hr/>
+    <form action="/order.php" method="post" id="form">
+        <table>
+            <tr>
+                <td>
+                    <img src="potato.jpg" title="Potato" height="120" width="120">
+                </td>
+                <td>
+                    <h3>Potato</h3><br/>
+                    <p>Price: $0.50 (ea)</p><br/>
+                    <label>Amount:</label><br/>
+                    <input type="number" name="quantity" min="0" style="width:30%">
+                </td>
+                <td>
+                    <img src="tomato.jpg" title="Tomato" height="120" width="120">
+                </td>
+                <td>
+                    <h3>Tomato</h3><br/>
+                    <p>Price: $0.75 (ea)</p><br/>
+                    <label>Amount:</label><br/>
+                    <input type="number" name="quantity" min="0" style="width:30%">
+                </td>
+            </tr>
+        </table><br/>
+        <button type="submit" form="form" value="Submit ">Order Selected Items</button>
+    </form>
+    <hr/>
+</main>
+<footer> 
+  <nav>
+  <ul>
+  <center>
+  <a href="contactReturns.html#contact">Contact Information</a>
+  <a href="contactReturns.html#return">Return/Exchange Policy</a>
+  <a href="contactReturns.html#care">Customer Care</a> 
+  <a href="contactReturns.html#info">More Information</a>
+  </center>
+  </ul>
+  </nav>
+</footer>
+</body>
+</html>

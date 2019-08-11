@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+   <meta charset="utf-8">
+   <title>Farm Finder - Sign Up</title>
+   <link type = "text/css" href="searchForm.css" rel= "stylesheet" />
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script type="text/javascript" src = "functions.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+
+</head>
+<body>
+<header>
+ <h1>FARM FINDER </h1>
+  <nav>
+    <ul>
+    <a href="homePage.html">Home</a>
+    <a href="searchForm.html">Search</a>
+    <a href="nearbyFarms.html">Farms Near Me</a>
+    <a href="farmSignUp.html">Sign In</a>
+    <a href="Cart.html">Cart</a>
+    </ul> 
+ </nav>
+</header>
+<main>
+  <h1 style="color: white;background-color: #90EE90;"> Account Creation</h1>
+   <section>
+    <div id="farmSignUpForm">
+    <form name="signUp" action="">
+      <fieldset>
+      <table>
+        <tr>
+          <td>
+            <script>
+        function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#pic')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+      </script>
+        Profile Picture: <br>
+      <input type="file" id = "file" name = "file" accept="image/*" onchange= "readURL(this);" /> <br>
+       <img id="file" name = "pic" src="#" alt="your image"/>
+          </td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>
+      <label for="about" id="about_label">About:</label>
+        <input type="text" id = "about" name="about" class = "text-input" style="width:95%; padding: 20px 10px; line-height: 20%;">
+            <label class="error" for="about" id="about_error">This field is required.</label>
+
+        </td>
+      </tr>
+      <tr>
+          <td>
+      <label for="name" id="name_label">Supplier Name:</label> <br>
+        <input type="text" id = "name" name="name" class = "text-input" style="width:40%;">
+            <label class="error" for="name" id="name_error">This field is required.</label>
+
+        </td>
+      </tr>
+      <tr>
+         <td>Contact Info: <br> <br>
+          <label for="address" id="address_label">Address:</label><br>
+        <input type="text" name="address" id = "address" class = "text-input" style="width:40%">
+        <br>
+        <label class="error" for="address" id="address_error">This field is required.</label>
+
+          </td>
+          <td> <br><br>
+            <label for="phone" id="phone_label">Phone:</label>
+            <br>
+            <input type="text" name="phone" id = "phone" class = "text-input"  style="width:40%">
+            <br>
+            <label class="error" for="phone" id="phone_error">This field is required.</label>
+          </td>
+        </tr>
+        <tr>
+        <td>
+          <label for="city" id="city_label">City:</label>
+          <br>
+        <input type="text" name="city" id = 'city' class = "text-input" style="width:40%">
+        <br>
+         <label class="error" for="city" id="city_error">This field is required.</label>
+        </td>
+        <td>
+          <label for="state" id="state_label">State*:</label>
+          <br>
+      <select name="state" id = "state" class = "text-input" style="width:50%">
+        <option value="AL">AL</option>
+          <option value="AK">AK</option>
+          <option value="AZ">AZ</option>
+          <option value="AR">AR</option>
+          <option value="CA">CA</option>
+          <option value="CO">CO</option>
+          <option value="CT">CT</option>
+          <option value="DE">DE</option>
+          <option value="FL">FL</option>
+          <option value="GA">GA</option>
+          <option value="HI">HI</option>
+          <option value="ID">ID</option>
+          <option value="IL">IL</option>
+          <option value="IN">IN</option>
+          <option value="IA">IA</option>
+          <option value="KS">KS</option>
+          <option value="KY">KY</option>
+          <option value="LA">LA</option>
+          <option value="ME">ME</option>
+          <option value="MA">MA</option>
+          <option value="MD">MD</option>
+          <option value="MI">MI</option>
+          <option value="MN">MN</option>
+          <option value="MS">MS</option>
+          <option value="MO">MO</option>
+          <option value="MT">MT</option>
+          <option value="NE">NE</option>
+          <option value="NV">NV</option>
+          <option value="NH">NH</option>
+          <option value="NJ">NJ</option>
+          <option value="NM">NM</option>
+          <option value="NY">NY</option>
+          <option value="NC">NC</option>
+          <option value="ND">ND</option>
+          <option value="OH">OH</option>
+          <option value="OK">OK</option>
+          <option value="OR">OR</option>
+          <option value="PA">PA</option>
+          <option value="RI">RI</option>
+          <option value="SC">SC</option>
+          <option value="SD">SD</option>
+          <option value="TN">TN</option>
+          <option value="TX">TX</option>
+          <option value="UT">UT</option>
+          <option value="VT">VT</option>
+          <option value="VA">VA</option>
+          <option value="WA">WA</option>
+          <option value="WV">WV</option>
+          <option value="WI">WI</option>
+          <option value="WY">WY</option>
+      </select>
+      <br>
+      <label class="error" for="state" id="state_error">This field is required.</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="zip" id="zip_label">Zip:</label>
+          <br>
+        <input type="text" name="zip" id = "zip" class = "text-input"  style="width:40%">
+        <br>
+        <label class="error" for="zip" id="zip_error">This field is required.</label>
+        </td>
+      </tr>
+        <tr>
+          <td>
+           <button  type="submit" name="submit" class = "button1" id = "submit" value="Send" style="width:50%">Submit</button>
+         </td>
+         <td>
+          </form>
+        </fieldset>
+        </div>
+          <form action="" method="POST" enctype="multipart/form-data" name="productForm" id="products">
+
+          Products: <br>
+      <input type="file" name="file" id="productsfile" accept=".csv"/> <br>
+      <button  type="submit" form="products" name="psubmit" value="send2" class = "button2" style="width:50%">Submit Products</button>
+      </form>                
+      <a href="/Users/ryangould/Desktop/webDevFinal/dataSheet1.xlsx" download="products.xlsx">Download Our Template</a>
+        <br>
+        </td>
+        </tr>
+    </table>
+   
+ <!--  <form id = "products" method="get" action="/Users/ryangould/Desktop/webDevFinal/dataSheet1.xlsx">
+          <button style="width:20%;" type="submit">Download Our Template:</button>
+        </form> -->
+</section>
+<script> $(function() {
+    $('.error').hide();
+    $(".button1").click(function() {
+      // validate and process form here
+      
+      $('.error').hide();
+      var about = $("input#about").val();
+      if (about == "") {
+        $("label#about_error").show();
+        $("input#about").focus();
+        return false;
+      }
+      var name = $("input#name").val();
+      if (name == "") {
+        $("label#name_error").show();
+        $("input#name").focus();
+        return false;
+      }
+      var address = $("input#address").val();
+      if (address == "") {
+        $("label#address_error").show();
+        $("input#address").focus();
+        return false;
+      }
+      var phone = $("input#phone").val();
+      if (phone == "") {
+        $("label#phone_error").show();
+        $("input#phone").focus();
+        return false;
+      }
+      var state = $("select#state").val();
+      if (state == "") {
+        $("label#state_error").show();
+        $("input#state").focus();
+        return false;
+      }
+      var city = $("input#city").val();
+      if (city == "") {
+        $("label#city_error").show();
+        $("input#city").focus();
+        return false;
+      }
+      var zip = $("input#zip").val();
+      if (city == "") {
+        $("label#zip_error").show();
+        $("input#zip").focus();
+        return false;
+      }
+      var submit = $("button#submit").val();
+      var dataString = '&about='+ about +'&nam=' + name + '&address=' + 
+      address + '&phone=' + phone + '&state=' + state + '&city=' + city + '&zip=' + zip + '&submit' + submit;
+      //var id = 33;
+ //alert (dataString);return false;
+  $.ajax({
+    type: "POST",
+    url: "farmSignUp.php",
+    data: {submit:submit, about: about, name:name, address: address, phone: phone, city: city, state: state, zip: zip},
+   success: function() {
+    console.log('account added');
+    }
+  });
+  return false;
+    });
+  });
+</script>
+<script>
+  $(function() {
+    $(".button2").click(function() {
+  var blobFile = ($("#productsfile"))[0].files[0];
+  var formData = new FormData();
+  //var submit = $(".button2#submit").val();
+  //alert(submit);
+  formData.append("productsCSV",blobFile);
+    $.ajax({
+       url: "productUpload.php",
+       type: "POST",
+       data: formData,
+       processData: false,
+       contentType: false,
+       success: function() {
+           $('#farmSignUpForm').html("<div id='message'></div>");
+      $('#message').html("<h2>Account and Products Added!</h2>")
+      .append("<p>Customers will be in touch soon.</p>");
+       },
+       error: function(jqXHR, textStatus, errorMessage) {
+           console.log(errorMessage); // Optional
+       }
+    });
+    return false;
+    });
+  });
+  </script>
+</main>  
+<footer>
+   <nav>
+  <ul>
+  <a href="contactReturns.html">Contact Information</a>
+  <a href="contactReturns.html">Return/Exchange Policy</a>
+  <a href="contactReturns.html">More Information</a>
+  <a href="contactReturns.html">Customer Care</a>
+  </ul>
+  </nav>
+</footer>
+
+</body>
+</html>

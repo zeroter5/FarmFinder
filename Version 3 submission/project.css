@@ -1,0 +1,119 @@
+header, footer {
+	color: white;
+	background-color: #90EE90;
+	margin: 0em 4em 0.25em 4em;
+}
+
+body {
+	background-color: #E8EAF6;
+}
+
+main {
+	background-color: white;
+	margin: 0em 10em 1em 10em;
+	padding:1em 1em 1em 1em;
+}
+
+header h1 {
+	color: black;
+	font-size: 200%;
+	font-family: initial;
+	padding: 0em 1em 1em 1em;
+
+}
+
+header {
+	font-size: 200%;
+	
+}
+
+header h3 {
+	font-size: 200%;
+	font-family: initial;
+	font-style: normal;
+	padding:0em 1em 1em 1em;
+
+}
+
+h2 {
+	color: black;
+	background-color: #90EE90;
+	margin: 0em 0em 0em 0em;
+	padding:1em 1em 1em 1em;
+	font-family: initial;
+
+}
+
+nav {
+	color: blue;
+	background-color: #90EE90;
+	margin: 0em 0em 1em 0em;
+	font-size: 100%;
+	padding: 0em 1em 0em 1em;
+
+}
+
+nav b {
+	color: blue;
+	background-color: #90EE90;
+	margin: 0em 0em 1em 0em;
+	font-size: 100%;
+	padding: 0em 1em 0em 1em;
+
+}
+
+nav a:link {
+	color: #00B0FF;
+	margin: 0em 0em 1em 0em;
+	padding: 0em 1em 0em 1em;
+}
+
+nav a:hover
+{
+	background-color: #31A231;
+	color: #00B0FF;
+
+
+	}
+figcaption {
+	background-color: #C5CAE9;
+	margin: 0em 0em 0em 0em;
+	padding:1em 1em 1em 1em;
+	font-family: initial;
+}
+
+div {
+
+	margin: 0em 0em 0em 0em;
+	padding:0em 1em 1em 0em;
+	font-family: initial;
+	font-size: 100%;
+}
+
+time {
+	color: #FF80AB;
+}
+
+footer {
+margin: 0em 8em 0em 8em;
+padding:2em 2em 2em 2em;
+font-size: 100%;
+
+}
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}

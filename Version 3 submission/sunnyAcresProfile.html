@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Farm Finder - Farm Profile</title>
+   <link href="resetProject.css" rel="stylesheet" />
+   <link href="project.css" rel="stylesheet" />
+</head>
+
+<body>
+<header>
+  <h1>FARM FINDER</h1>
+  <nav>
+    <ul>
+    <center><a href="homePage.html">Home</a>
+    <a href="searchForm.html">Search</a>
+    <a href="nearbyFarms.html">Farms Near Me</a>
+    <a href="farmSignUp.html">Sign Up</a>
+    <a href="cart.html">Cart</a></center>
+    </ul> 
+ </nav>
+</header>
+
+<main>
+    <h2>Farm Profile:</h2>
+    <hr/>
+     <section>
+         <table>
+            <td>
+                <img src="denmark_farm.jpg" title="Sunny Acres" height="240" width="240">
+             </td>
+             <td>
+                 <h3>Sunny Acres</h3><br/>
+                 <p>Our apples are so damn good, they're all we need to stay in business.</p><br/>
+                 <h3>Contact Information</h3><br/>
+                 <p>Address: 4 Dark Lane</p>
+                 <p>Phone #: 908-765-4321</p>
+                 <p>Email: applesordie@gmail.com</p>
+                 
+             </td>
+         </table>
+     </section>
+    
+    <hr/>
+    <h2>Products Available:</h2>
+    <hr/>
+    <form action="/order.php" method="post" id="form">
+        <table>
+            <tr>
+                <td>
+                    <img src="apple.png" title="Apple" height="120" width="140">
+                </td>
+                <td>
+                    <h3>Apple</h3><br/>
+                    <p>Price: $1.49 (ea)</p><br/>
+                    <label>Amount:</label><br/>
+                    <input type="number" name="quantity" min="0" style="width:30%">
+                </td>
+            </tr>
+        </table><br/>
+        <button type="submit" form="form" value="Submit">Order Selected Items</button>
+    </form>
+    <hr/>
+</main>
+<footer> 
+  <nav>
+  <ul>
+  <center>
+  <a href="contactReturns.html#contact">Contact Information</a>
+  <a href="contactReturns.html#return">Return/Exchange Policy</a>
+  <a href="contactReturns.html#care">Customer Care</a> 
+  <a href="contactReturns.html#info">More Information</a>
+  </center>
+  </ul>
+  </nav>
+</footer>
+</body>
+</html>
